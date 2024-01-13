@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/About.dart';
 import 'package:flutter_application_1/CurrencyConvert.dart';
 import 'package:flutter_application_1/Home.dart';
+import 'package:flutter_application_1/DataGempa.dart';
 
 
 
@@ -18,6 +19,8 @@ class _NavBarRootsState extends State<NavBarRoots> {
     HomeScreen(),
     CurrencyConverter(),
     BiodataPage(),
+    EarthquakePage(),
+    
   ];
   @override
   Widget build(BuildContext context) {
@@ -53,6 +56,10 @@ class _NavBarRootsState extends State<NavBarRoots> {
               BottomNavigationBarItem(
               icon: Icon(Icons.person),
               label:"about",
+              ),
+              BottomNavigationBarItem(
+              icon: Icon(Icons.add_chart),
+              label:"Data Gempa",
               ),
           ],
         ),
